@@ -1,24 +1,23 @@
 # README
+## O Projeto
+Esse sistema tem como objetivo conectar pessoas que precisam se desfazer de moveeis e precisam que alguém vá retirar à pessoas ou organizações que aceitam doações
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Contriuindo
+Bug report e pull requests são bem vindos, seguindo [este código de conduta](https://www.contributor-covenant.org/pt-br/version/1/4/code-of-conduct)
 
-Things you may want to cover:
+## Dependencias 
+- ruby 2.6.5
+- postegres 11.5
 
-* Ruby version
+## Setup
+- `bundle install`
+- `yarn install --check-files`
+- `pg_ctl -D /usr/local/var/postgres start`
+- `cp config/database.yml.sample config/database.yml`
+## DB
+- `rails db:setup`
 
-* System dependencies
+## Rodando o projeto
+- `rails server`
+Fazendo isso o projeto vai estar disponivel em `localhost:3000`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
